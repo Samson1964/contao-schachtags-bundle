@@ -13,4 +13,6 @@ Spezielle Inserttags für die Verwendung beim Deutschen Schachbund.
 {{wp-en::Name}}
 {{homepage::URL}}
 {{twitch::Name}}
+{{youtube::Name}}
 
+Der Name bei YouTube ist entweder "@Name" oder "channel/ID".

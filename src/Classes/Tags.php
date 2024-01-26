@@ -80,12 +80,24 @@ class Tags extends \Frontend
 		// Inserttag {{twitch::Name}}
 		// Liefert zu den Link zu Twitch. Es wird eine Grafik von schachbund.de angezeigt.
 		// Parameter 1 (Name) = Benutzername bei Twitch
-		if($arrSplit[0] == 'homepage' || $arrSplit[0] == 'cache_homepage')
+		if($arrSplit[0] == 'twitch' || $arrSplit[0] == 'cache_twitch')
 		{
 			// Parameter 1 angegeben?
 			if(isset($arrSplit[1]))
 			{
 				return '<a href="https://www.twitch.tv/'.$arrSplit[1].'" target="_blank" title="Twitch"><img src="files/dsb/theme/icons/twitch_32.png"></a>';
+			}
+		}
+
+		// Inserttag {{youtube::Name}}
+		// Liefert zu den Link zu Youtube. Es wird eine Grafik von schachbund.de angezeigt.
+		// Parameter 1 (Name) = Benutzername bei Youtube ggfs. mit channel/ID davor
+		if($arrSplit[0] == 'youtube' || $arrSplit[0] == 'cache_youtube')
+		{
+			// Parameter 1 angegeben?
+			if(isset($arrSplit[1]))
+			{
+				return '<a href="https://www.youtube.com/'.$arrSplit[1].'" target="_blank" title="YouTube"><img src="files/dsb/theme/icons/youtube_32.png"></a>';
 			}
 		}
 
